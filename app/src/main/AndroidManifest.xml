@@ -25,7 +25,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".DisplaySensorActivity"></activity>
+        <activity android:name=".DisplaySensorActivity" />
+        <activity android:name=".DisplayCompassActivity"></activity>
     </application>
 
 </manifest>

@@ -31,5 +31,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToCompass(View view) {
+        Intent intent = new Intent(this, DisplayCompassActivity.class);
+        startActivity(intent);
+    }
+
 
 }

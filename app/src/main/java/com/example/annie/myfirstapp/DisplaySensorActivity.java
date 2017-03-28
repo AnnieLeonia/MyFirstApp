@@ -9,25 +9,51 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 
-public class DisplaySensorActivity extends AppCompatActivity  {
+public class DisplaySensorActivity extends AppCompatActivity implements SensorEventListener {
+    private SensorManager mSensorManager;
+    private Sensor mAccelerometer;
+    private float linear_acceleration[];
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_sensor);
-
-
-        TextView textView5 = (TextView) findViewById(R.id.textView5);
-        textView5.setText("X-value: " + 1);
-
-        TextView textView6 = (TextView) findViewById(R.id.textView6);
-        textView6.setText("Y-value: " + 2);
-
-        TextView textView7 = (TextView) findViewById(R.id.textView7);
-        textView7.setText("Z-value: " + 3);
-
-
+        mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
+        mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        linear_acceleration = new float[3];
     }
+
+    protected void onResume() {
+        super.onResume();
+        mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+    }
+
+    protected void onPause() {
+        super.onPause();
+        mSensorManager.unregisterListener(this);
+    }
+
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+    }
+
+    public void onSensorChanged(SensorEvent event) {
+        final float alpha = (float) 0.8;
+
+        linear_acceleration[0] = event.values[0];
+        linear_acceleration[1] = event.values[1];
+        linear_acceleration[2] = event.values[2];
+
+        TextView textXaxis = (TextView) findViewById(R.id.textXaxis);
+        textXaxis.setText(""+ linear_acceleration[0]);
+
+        TextView textYaxis = (TextView) findViewById(R.id.textYaxis);
+        textYaxis.setText(""+ linear_acceleration[1]);
+
+        TextView textZaxis = (TextView) findViewById(R.id.textZaxis);
+        textZaxis.setText("" + linear_acceleration[2]);
+    }
+
 }
 
 

@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">My First App</string>
+    <string name="app_name">Annies App</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
-    <string name="button_sensor">Sensor</string>
+    <string name="button_sensor">Accelerator</string>
+    <string name="button_compass">Compass</string>
 </resources>
