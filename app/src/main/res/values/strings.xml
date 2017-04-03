@@ -4,4 +4,12 @@
     <string name="button_send">Send</string>
     <string name="button_sensor">Accelerator</string>
     <string name="button_compass">Compass</string>
+    <string name="header_compass">KOMPIS</string>
+    <string name="text_compass">Fixa Kompass!</string>
+    <string name="header_line">_________________________________________________</string>
+    <string name="header_accelerator">Accelerator</string>
+    <string name="label_x_axis">X-axis</string>
+    <string name="label_y_axis">Y-axis</string>
+    <string name="label_z_axis">Z-axis</string>
+    <string name="image_description">Direction to North</string>
 </resources>

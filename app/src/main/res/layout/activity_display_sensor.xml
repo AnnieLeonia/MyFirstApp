@@ -13,7 +13,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        android:text="Accelerometer"
+        android:text="@string/header_accelerator"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/colorAccent"
@@ -29,13 +29,12 @@
         android:layout_height="55dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:text="TextView"
+        android:layout_marginTop="16dp"
         android:textAlignment="center"
         android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.57"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
-        android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@+id/textXlabel"
         tools:layout_editor_absoluteX="114dp" />
 
@@ -45,13 +44,12 @@
         android:layout_height="56dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:text="TextView"
+        android:layout_marginTop="16dp"
         android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@+id/textYlabel" />
 
     <TextView
@@ -60,14 +58,13 @@
         android:layout_height="59dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:text="TextView"
+        android:layout_marginTop="16dp"
         android:textAlignment="center"
         android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/textZlabel"
-        app:layout_constraintHorizontal_bias="0.503" />
+        app:layout_constraintTop_toBottomOf="@+id/textZlabel" />
 
     <TextView
         android:id="@+id/textXlabel"
@@ -76,7 +73,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="8dp"
-        android:text="X-axis"
+        android:text="@string/label_x_axis"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textSize="36sp"
@@ -92,7 +89,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        android:text="Y-axis"
+        android:text="@string/label_y_axis"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textSize="36sp"
@@ -108,15 +105,15 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        android:text="Z-axis"
+        android:text="@string/label_z_axis"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textSize="36sp"
         android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textYaxis"
-        app:layout_constraintHorizontal_bias="0.503" />
+        app:layout_constraintTop_toBottomOf="@+id/textYaxis" />
 
     <TextView
         android:id="@+id/textView13"
@@ -125,7 +122,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="-16dp"
-        android:text="_________________________________________________"
+        android:text="@string/header_line"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textStyle="bold"
