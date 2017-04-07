@@ -105,6 +105,7 @@ public class DisplayCompassActivity extends AppCompatActivity implements SensorE
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
+        //nothing
     }
 
     public void doColors(float azimuthInDegress) {
