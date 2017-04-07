@@ -4,7 +4,7 @@
     <string name="button_send">Send</string>
     <string name="button_sensor">Accelerator</string>
     <string name="button_compass">Compass</string>
-    <string name="header_compass">KOMPIS</string>
+    <string name="header_compass">Compass</string>
     <string name="text_compass">Fixa Kompass!</string>
     <string name="header_line">_________________________________________________</string>
     <string name="header_accelerator">Accelerator</string>
