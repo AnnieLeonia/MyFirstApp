@@ -38,7 +38,7 @@ public class DisplaySensorActivity extends AppCompatActivity implements SensorEv
     }
 
     public void onSensorChanged(SensorEvent event) {
-        
+
         linear_acceleration[0] = event.values[0];
         linear_acceleration[1] = event.values[1];
         linear_acceleration[2] = event.values[2];
