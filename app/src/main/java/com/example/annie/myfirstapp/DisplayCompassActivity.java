@@ -184,7 +184,7 @@ public class DisplayCompassActivity extends AppCompatActivity implements SensorE
                 vibrator.vibrate(50);
                 vibrator.cancel();
             }
-        }
+        } 
         oldGroup = currentGroup;
         return resultColor;
     }
