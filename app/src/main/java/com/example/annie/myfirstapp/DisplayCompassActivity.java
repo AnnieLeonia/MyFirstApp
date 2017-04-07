@@ -180,11 +180,11 @@ public class DisplayCompassActivity extends AppCompatActivity implements SensorE
             resultColor = Color.parseColor("#e6f7ff");
         }
         if (currentGroup == 1 || currentGroup == 12) {
-            if (currentGroup != oldGroup || (currentGroup ==1 && oldGroup==12) || (currentGroup ==12 && oldGroup==1)){
+            if (currentGroup != oldGroup){
                 vibrator.vibrate(50);
                 vibrator.cancel();
             }
-        } 
+        }
         oldGroup = currentGroup;
         return resultColor;
     }
